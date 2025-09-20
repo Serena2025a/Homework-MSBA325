@@ -13,11 +13,11 @@ st.title("Lebanon’s Unfinished Story: Between Infrastructure Projects and Econ
 st.caption("Uncover the story of Lebanon’s finances and infrastructure projects shaping its regions")
 
 # Add an image 
-st.image("C:/Users/User/Desktop/MSBA sem1/MSBA 325/Serena Aoun HW2/hero.jpg", use_container_width=True, caption="Beirut skyline (illustrative)")
+st.image("https://d2p9i44hnkrmkx.cloudfront.net/files/page-8%20Cropped.jpg", use_container_width=True, caption="Beirut skyline (illustrative)")
 
 # Subheader 1
 st.subheader("Section 1:Infrastructure: Signs of Promise or Neglect?")
-df = pd.read_csv("C:/Users/User/Desktop/MSBA sem1/MSBA 325/Serena Aoun HW2/Lebanon public Transportation 2023.csv")
+df = pd.read_csv("https://linked.aub.edu.lb/pkgcube/data/85ad3210ab85ae76a878453fad9ce16f_20240905_164730.csv")
 
 
 df.columns = df.columns.str.strip()
@@ -230,7 +230,7 @@ Reconstruction and urgent funding are desperately needed for Lebanon's infrastru
 
 #Subhearder 2
 st.subheader("Section 2:What Holds Back Infrastructure Dreams?")
-df = pd.read_csv("C:/Users/User/Desktop/MSBA sem1/MSBA 325/Serena Aoun HW2/Debt in Lebanon.csv")
+df = pd.read_csv("https://linked.aub.edu.lb/pkgcube/data/ec4c40221073bbdf6f75b6c6127249c3_20240905_173222.csv")
 df.columns = df.columns.str.strip()
 df_cleaned = df[df['Value'] > 1000] 
 df = df_cleaned.groupby('refPeriod', as_index=False)['Value'].mean()  
@@ -300,5 +300,6 @@ This makes infrastructure not just a spending choice, but a critical foundation 
 👉Prioritize Quick Wins: Start small, obvious improvements like repairing roads. Quick wins rapidly enhance everyday life and let donors and citizens know that progress is being made.
 
 👉Enhance Accountability and Transparency: To promote co-financing and rebuild confidence, openly share project pipelines, expenses, and schedules. Moreover, to guarantee that projects are completed on schedule, use independent monitoring.
+
 
     """)
